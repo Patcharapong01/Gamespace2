@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME SPACE Chat</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/chat.css">
+
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div class="logo">
+              <a href="test2.html" style="text-decoration: none;">GAME SPACE</a>
+            </div>
+            <div style="display: flex; margin-top: 40px;margin-right: 400px;">
+              <a href="#"><img src="images/Chat.png" alt="" style="margin-right: 50px;"></a>
+              <a href="test2.html"><img src="images/Apple Arcade.png" alt="" style="margin-right: 50px;"></a>
+              <a href="#"><img src="images/image 1.png" alt=""></a>
+            </div>
+            <div class="registeranddropdown">
+                <div class="dropdown">
+                    <button class="dropbtn "><i class="fa-solid fa-gear"></i></button>
+                    <div class="dropdown-content">
+                        <!-- darkmode -->
+                        <div class="theme-switch-container">
+                            <span id="toggle-icon">
+                                <span class="toggle-text">โหมดกลางวัน</span>
+                                <i class="fas fa-sun"></i>
+                            </span>
+                            <label class="theme-switch">
+                                <input type="checkbox">
+                                <div class="slider round"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn" data-bs-toggle="dropdown">
+                        <img src="images/cgrs.avif" class="rounded-circle" alt="Cinque Terre">
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="profile.html">ProFile</a></li>
+                      <li><span class="dropdown-item-text">ติดต่อเรา</span></li>
+                      <ul>
+                        <li><a class="dropdown-item" href="#">Facebook</a></li>
+                        <li><a class="dropdown-item" href="#">X</a></li>
+                        <li><a class="dropdown-item" href="#">Line</a></li>
+                      </ul>
+                      <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="images/com.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/reflex.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/gbeat.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="box">
+            <div class="Filter">
+                <p>ตัวกรอง</p>
+            </div>
+            <br>
+            <div class="selectroom">
+                <p>เลือกห้อง</p>
+                <hr>
+                <div class="container1">
+                    <div>
+                      <label>
+                        <input type="checkbox">
+                        <span>ทั่วไป</span>
+                      </label>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><hr><br>
+            <div>
+                <p>เลือกเกมส์</p>
+                <img src="images/csgo.jpg" alt="" style="width: 80px; border-radius: 50%;">
+            </div>
+          </div>
+        <div class="box2">
+          <div>
+            <div>
+              <button onclick="openPopup('createPartyPopup')">สร้างกระทู้</button>
+
+              <div id="createPartyPopup" class="popupParty">
+                <span class="close" style="cursor: pointer;" onclick="closePopup('createPartyPopup')">ย้อนกลับ</span>
+                <div class="form-container1">
+                  <h2 style="font-size: 20px;">หัวข้อกระทู้(ไม่เกิน 200 ตัวอักษร)</h2>
+                  <input style="width: 300px;" type="text" placeholder="มาคุยกัน" required>
+                  <h2>เกมส์</h2>
+                  <div class="container">
+                    <div>
+                      <label>
+                        <input type="checkbox">
+                        <span>Valorant</span>
+                      </label>
+                    </div>
+                    <div>
+                      <label>
+                        <input type="checkbox">
+                        <span>CSGO2</span>
+                      </label>
+                    </div>
+                  </div>
+                  <h3>เพิ่ม Hashtag</h3>
+                  <input style="width: 300px;" type="text">
+                  <div style="display: flex; justify-content: space-between;">
+                    <p style="margin-top: 5px;">เนื้อหา</p>
+                    <a href="#" style="margin-top: 5px;">เเนบรูป</a>
+                  </div>
+                  <textarea name="address" id="" cols="30" rows="10"></textarea>
+                  <div class="buttoncrp" style="display: flex; justify-content: space-between;" >
+                    <div style="background-color: greenyellow; border: 2px solid black; width: 90px; text-align: center; border-radius: 5px; margin-left: 100px; cursor: pointer;">
+                      <span class="close" onclick="closePopup('createPartyPopup')">สร้างปาร์ตี้</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div></div>
+          </div>
+          <div class="pass2">
+            <h2 class="allpraty">ปาร์ตี้ทั้งหมด</h2>
+          </div>
+          <div class="chat">
+            <div class="chat-container">
+              <div class="chat-message">
+                <div class="message-content">
+                  <div class="textchat">
+                  <p class="message-text">ไม่มีปาร์ตี้ที่ค้นหา</p>
+                  </div>
+              </div>
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="box3">
+          <p>ได้รับความสนใจขณะนี้</p>
+            <p>#VALORANTMaster Madrid</p>
+            <p>#CtrlCampustour</p>
+            <p>#VALORANTMaster</p>
+    </div>
+</div>
+  </section>
+  <footer>
+    <div class="footerlogo">
+        <div class="logo">
+            <h1>GAME SPACE</h1>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">หน้าเเรก</a></li>
+                <li><a href="#">ติดต่อเรา</a></li>
+                <li><a href="#">เเนะนำ - ติชม</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+    <div id="overlay" class="overlay" onclick="closePopup('imagePopup')"></div>
+
+    <div id="overlay" class="overlay" onclick="closeAllPopups()"></div>
+
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
