@@ -16,12 +16,12 @@ function switchMode(e){
 function darkMode(){
     toggleIcon.children[0].textContent="โหมดกลางคืน";
     toggleIcon.children[1].classList.replace('fa-sun','fa-moon');
-    nav.style.backgroundColor='rgb(0 0 0 / 50%)';
+    // nav.style.backgroundColor='rgb(0 0 0 / 50%)';
 }
 function lightMode(){
     toggleIcon.children[0].textContent="โหมดกลางวัน";
     toggleIcon.children[1].classList.replace('fa-moon','fa-sun');
-    nav.style.backgroundColor='rgb(255 255 255 / 50%)';
+    // nav.style.backgroundColor='rgb(255 255 255 / 50%)';
 }
 
 switchToggle.addEventListener('change',switchMode);
